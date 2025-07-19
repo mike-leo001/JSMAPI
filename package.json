@@ -1,0 +1,20 @@
+{
+  "name": "jira-ticket-dashboard",
+  "version": "1.0.0",
+  "description": "Jira Ticket Intake Dashboard",
+  "main": "backend/server.js",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install", 
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "start": "cd backend && node server.js",
+    "build": "npm run install:all && npm run build:frontend",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "setup": "npm run build"
+  },
+  "keywords": ["jira", "dashboard", "ticket", "management"],
+  "author": "",
+  "license": "MIT"
+} 
